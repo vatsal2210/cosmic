@@ -2,12 +2,7 @@
 
 Find and load configuration for your app, based on [cosmiconfig](https://github.com/davidtheclark/cosmiconfig#explorersearch), with fallback to environment variables.
 
-[![Based on Node.ts](https://img.shields.io/badge/based%20on-node.ts-brightgreen)](https://github.com/vatsal2210/node.ts)
-[![npm type definitions](https://img.shields.io/npm/types/@vatsal2210/cosmic.svg)](https://unpkg.com/browse/@vatsal2210/cosmic/dist/index.d.ts)
-[![npm package](https://img.shields.io/npm/v/@vatsal2210/cosmic.svg)](https://www.npmjs.com/package/node.ts)
-[![npm downloads](https://img.shields.io/npm/dw/@vatsal2210/cosmic)](https://www.npmjs.com/package/node.ts)
 [![Coverage Status](https://coveralls.io/repos/github/vatsal2210/cosmic/badge.svg?branch=main)](https://coveralls.io/github/vatsal2210/cosmic?branch=main)
-
 
 ## ⭐ Features
 
