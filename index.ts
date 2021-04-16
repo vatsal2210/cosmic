@@ -3,10 +3,10 @@ import {
   cosmiconfigSync,
   Options,
   OptionsSync,
-} from "cosmiconfig";
-import { config as dotenvConfig } from "dotenv";
-import camel from "lodash.camelcase";
-import { CosmiconfigResult } from "cosmiconfig/dist/types";
+} from 'cosmiconfig';
+import { config as dotenvConfig } from 'dotenv';
+import { camelCase } from 'lodash';
+import { CosmiconfigResult } from 'cosmiconfig/dist/types';
 dotenvConfig();
 
 export interface CosmicResult {
@@ -14,7 +14,7 @@ export interface CosmicResult {
 }
 
 const defaultSearchPlaces = (name: string) => [
-  "package.json",
+  'package.json',
   `.${name}rc`,
   `.${name}rc.json`,
   `.${name}rc.yaml`,
@@ -31,7 +31,7 @@ const defaultSearchPlaces = (name: string) => [
 const _getCosmicResult = (result: CosmiconfigResult): CosmicResult => {
   const env = { ...process.env };
   for (const key in env) {
-    env[camel(key)] = env[key];
+    env[camelCase(key)] = env[key];
     delete env[key];
   }
   return { ...(result || {}).config, ...env };
@@ -65,6 +65,7 @@ export const clearCosmicCache = () => {
 
 export const config = <T = any>(key: string, defaultValue?: T): T => {
   if (cachedConfig && cachedConfig[key]) return cachedConfig[key] as T;
-  if (cachedConfigSync && cachedConfigSync[key]) return cachedConfigSync[key] as T;
+  if (cachedConfigSync && cachedConfigSync[key])
+    return cachedConfigSync[key] as T;
   return defaultValue as T;
 };
