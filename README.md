@@ -3,7 +3,7 @@
 Find and load configuration for your app, based on [cosmiconfig](https://github.com/davidtheclark/cosmiconfig#explorersearch), with fallback to environment variables.
 
 [![Coverage Status](https://coveralls.io/repos/github/vatsal2210/cosmic/badge.svg?branch=main)](https://coveralls.io/github/vatsal2210/cosmic?branch=main)
-
+[![Travis Status](https://travis-ci.com/vatsal2210/cosmic.svg?branch=main)](https://travis-ci.com/vatsal2210/cosmic.svg?branch=main)
 ## ⭐ Features
 
 Cosmic, like [cosmiconfig](https://github.com/davidtheclark/cosmiconfig#explorersearch), will look for a configuration file:
