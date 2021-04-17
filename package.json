@@ -1,6 +1,6 @@
 {
   "name": "vatsalshah-cosmic",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Find and load configuration for your app, based on cosmiconfig",
   "main": "dist/index.js",
   "bin": "dist/index.js",
